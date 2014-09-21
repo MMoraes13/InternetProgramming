@@ -32,7 +32,7 @@ public class Login  extends HttpServlet {
 	
 	
 	public String login (String username, int password) {
-		ManageUsers manageUser = new ManageUsers();
+		Users manageUser = new Users();
 		user = manageUser.readUser(username, password);
 		if (!user.equals(null)) {
 			return LOGIN_SUCCESSFUL;

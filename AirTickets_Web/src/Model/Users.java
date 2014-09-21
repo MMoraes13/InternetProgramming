@@ -4,19 +4,29 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.HashMap;
+import java.util.Scanner;
 
-public class ManageUsers {
+import com.sun.scenario.effect.LinearConvolveCoreEffect;
+
+public class Users {
 	private User user;
 	private HashMap <String, User> listOfUsers;
-	private File properties; //Caminho relativo para leitura do arquivo
-	private FileReader reader;
-	//Usando Para dar o Commit
-	public ManageUsers() {
+	private File properties; 
+	Scanner sc;
+	public Users() {
 		listOfUsers = new HashMap <String, User> ();
 		user = new User ();
-		properties = new File ("properties.file");
+		
 		try {
-			reader = new FileReader (properties);
+			properties = new File ("user.properties");
+			sc = new Scanner (new FileReader (properties)).useDelimiter("\n");
+			while (sc.hasNext()) {
+				String [] campos = sc.next().replace("=", " ").split("=");
+				user.setEmail(campos[0]);
+				user.setPassword(Integer.parseInt(campos[1]));
+				listOfUsers.put(user.getEmail(), user);
+			}
+			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -28,7 +38,7 @@ public class ManageUsers {
 			user.setName(username);
 			user.setEmail(email);
 			user.setPassword (password);
-			listOfUsers.put(username, user);
+			listOfUsers.put(email, user);
 			//Inserir no Arquivo
 		}
 		else {
