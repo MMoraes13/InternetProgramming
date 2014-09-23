@@ -9,14 +9,14 @@
 <body>
 	<h1>Log in here</h1>
 	<form name="input" action="login.jsp" method="post">
-		User: <input type="text" name="username"> Pass: <input type="password"
-			name="password"> <input type="submit" value="Submit">
+		User: <input type="text" name="username">
+		Pass: <input type="password" name="password"> <input type="submit" value="Submit">
 	</form>
 
 	<h1>Register here</h1>
-	<form name="input2" action="register" method="get">
-		User: <input type="text" name="username"> Pass: <input type="password"
-			name="password"> <input type="submit" value="Submit">
+	<form name="registration" action="Registration" method="post">
+		User: <input type="text" name="username"> 
+		Pass: <input type="password" name="password"> <input type="submit" value="Submit">
 	</form>
 
 </body>
