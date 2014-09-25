@@ -10,7 +10,6 @@
 <h1>Order received! Your flight is reserved. See you soon!</h1>
 
 <p>
-
 Thank your for flying Minas Flight Air. Click <a href = "flightsearch.jsp"> here </a> to go back!
 </p>
 
