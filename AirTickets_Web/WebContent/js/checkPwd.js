@@ -17,15 +17,3 @@ function checkPass()
         message.innerHTML = "Passwords Do Not Match!"
     }
 } 
-
-function CheckPassword() 
-{
-	
-	var p1 = document.getElementById('pass1');
-	var p2 = document.getElementById('pass2');
-	
-	if (p1.value == p.value)
-		return true;
-	
-	return false;
-}

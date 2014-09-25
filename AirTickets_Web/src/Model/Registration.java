@@ -29,9 +29,7 @@ public class Registration extends HttpServlet {
 			response.sendRedirect("login.jsp");
 			
 		} else {
-			// TODO implementar sei lah uq
-			
-			System.out.println("ja existe");
+
 			response.sendRedirect("login.jsp");
 		}
 		

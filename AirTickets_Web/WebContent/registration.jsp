@@ -11,7 +11,7 @@
 <body>
 
 	<h1>Register here</h1>
-	<form name="registration" action="Registration" method="post" onsubmit="return CheckPassword(this)">
+	<form name="registration" action="Registration" method="post">
 		User: <input type="text" name="username"> 
 		Pass: <input type="password" name="password" id="pass1"> 
 		Re-pass: <input type="password" name="check_password" id="pass2" onkeyup="checkPass(); return false;">
