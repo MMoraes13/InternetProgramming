@@ -10,9 +10,6 @@ import Utilities.PropertiesFileHandler;
 public class Users {
 
 	private User user;
-	HashMap<String, User> listOfUsers;
-	private File properties;
-	private String pathToFile = "users.properties";
 	Scanner sc;
 	private FileWriter fw;
 	PropertiesFileHandler p = null;
@@ -43,16 +40,6 @@ public class Users {
 
 			return false;
 		}
-	}
-
-	public User readUser(String username, String password) {
-
-		user = listOfUsers.get(username);
-
-		if (!user.equals(null) && user.getPassword().equals(password)) {
-			return user;
-		}
-		return null;
 	}
 
 }

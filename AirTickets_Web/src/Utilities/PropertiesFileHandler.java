@@ -57,8 +57,15 @@ public class PropertiesFileHandler {
 
 		if (pass == null)
 			exists = false;
-		else
-			exists = true;
+		else {
+			
+			String hashedPwd = "" + user.getPassword().hashCode();
+			user.setPassword(hashedPwd);
+			
+			if(pass.equals(user.getPassword()))
+				exists = true;
+			
+		}
 
 		return exists;
 
