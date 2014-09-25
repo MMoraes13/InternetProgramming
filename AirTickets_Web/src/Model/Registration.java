@@ -2,13 +2,14 @@ package Model;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Map;
-import java.util.Map.Entry;
+import java.util.Enumeration;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import Utilities.Html;
 
 public class Registration extends HttpServlet {
 
@@ -24,20 +25,17 @@ public class Registration extends HttpServlet {
 		
 		Users us = new Users();
 		
-		user = new User(request.getParameter("name"), 
+		user = new User(request.getParameter("username"), 
 				 request.getParameter("password"));
 		
-		if (us.createUser(user.getName(), user.getPassword()) == true) {
-			//TODO criar Utilities
-			response.setContentType("text/html");
-			PrintWriter out = response.getWriter();
-			String title = "Using GET Method to Read Form Data";
-			String docType = "<!doctype html public \"-//w3c//dtd html 4.0 transitional//en\">\n";
-			for (Entry<String, User> entry : us.listOfUsers.entrySet()) {
-				out.println(entry.getKey() + "/n");
-			}
-			out.println("funcionou" + 
-			"</body></html>");
+		Html html = new Html("Registration page");
+		
+		if (us.createUser(user) == true) {
+			
+			response.sendRedirect("login.jsp");
+			
+		} else {
+			System.out.println("ja existe");
 		}
 		
 		

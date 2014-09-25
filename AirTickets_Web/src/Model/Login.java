@@ -22,11 +22,12 @@ public class Login  extends HttpServlet {
 	 }
 	public void doPost (HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		int hashedPassword = request.getParameter("password").hashCode();
-		if (login (request.getParameter ("username"), hashedPassword).equals(LOGIN_SUCCESSFUL)) {
-			PrintWriter out = response.getWriter(); 
-			out.println("Hello, "+user.getName()); 
-		}
+//		int hashedPassword = request.getParameter("password").hashCode();
+//		if (login (request.getParameter ("username"), hashedPassword).equals(LOGIN_SUCCESSFUL)) {
+//			PrintWriter out = response.getWriter(); 
+//			out.println("Hello, "+user.getName()); 
+//		}
+		System.out.println("funfou");
 		
 	}
 	
