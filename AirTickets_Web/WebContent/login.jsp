@@ -7,7 +7,7 @@
 <title>Login page</title>
 </head>
 <body>
-	<h1>Log in here</h1>
+	<h3>Log in here</h3>
 	<form name="input" action="Login" method="post">
 		User: <input type="text" name="username">
 		Pass: <input type="password" name="password"> 

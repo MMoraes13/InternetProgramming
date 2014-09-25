@@ -23,7 +23,7 @@ public class Users {
 	}
 
 	public boolean createUser(User user) {
-		
+		p = new PropertiesFileHandler();
 		if (p.userExist(user) == false) {
 
 			String hashedPassword = "";

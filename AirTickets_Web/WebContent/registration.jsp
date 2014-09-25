@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<h1>Register here</h1>
+	<h3>Register here</h3>
 	<form name="registration" action="Registration" method="post">
 		User: <input type="text" name="username"> 
 		Pass: <input type="password" name="password" id="pass1"> 

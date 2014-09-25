@@ -14,7 +14,7 @@ public class PropertiesFileHandler {
 	public Properties p;
 	FileInputStream fis = null;
 	String propFilePath = "/Users/lucas/git/InternetProgramming/AirTickets_Web/src/Model/users.properties";
-
+	
 	public PropertiesFileHandler() {
 
 		p = new Properties();
