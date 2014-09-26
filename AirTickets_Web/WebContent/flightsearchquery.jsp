@@ -10,7 +10,7 @@
 <body>
 <div class="container-fluid">
     <h3>Details of your travel: </h3>
-	<form class="form-horizontal" role="form" name="input" action="flightsearch.jsp" method="post">
+	<form class="form-horizontal" role="form" name="input" action="flightsearchresult.jsp" method="post">
 		<div class="form-group">
   			<label class="col-sm-2 control-label" for="source">Source</label>
   			<div class="col-sm-10">
@@ -39,9 +39,10 @@
 		    	</select>
 		    </div>
     	</div>
-		<button type="button" class="btn btn-danger" value="Exit" onClick="window.location='login.jsp'">Exit</button>
+		<button type="button" class="btn btn-danger col-md-offset-2" value="Exit" onClick="window.location='login.jsp'">Exit</button>
 		<button type="submit" class="btn btn-success" value="Search">Search</button>
-	</form>     
+	</form> 
+	<br><br><button type="button" class="btn btn-default"  onClick="window.location='login.jsp'"><b>Logout</b></button>    
 </div>
 </body>
 </html>

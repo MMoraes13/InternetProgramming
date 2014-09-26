@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
 <title>Confirmation page</title>
 </head>
 <body>
@@ -13,7 +14,10 @@
 		Thank your for flying Minas Flight Air. Click <a
 			href="flightsearch.jsp"> here </a> to continue flying!
 	</p>
-
-
+	
+	<br><br>
+	<button type="button" class="btn btn-primary"  onClick="window.location='flightsearchquery.jsp'"><b>Home</b></button>
+	<button type="button" class="btn btn-default"  onClick="window.location='login.jsp'"><b>Logout</b></button>
+	
 </body>
 </html>

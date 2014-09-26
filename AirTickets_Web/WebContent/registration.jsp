@@ -33,7 +33,6 @@
 		</div>
 		<input type="button" class="col-sm-offset-1 btn btn-danger" value="Cancel" onclick="window.location='login.jsp';" >
 		<input class="btn btn-success" type="submit" value="Submit">
-		
 	</form>
 </div>
 </body>
