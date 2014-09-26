@@ -24,7 +24,7 @@
   			</div>
 		</div>
 		<div class="form-group">
-  			<label class="col-sm-2 control-label" for="number_of_seats">Number of seats</label>
+  		<label class="col-sm-2 control-label" for="number_of_seats">Number of seats</label>
   			<div class="col-sm-10">
   				<input type="textfield" class="form-group" id="number_of_seats" placeholder="Number of seats" name="number_of_seats">
   			</div>

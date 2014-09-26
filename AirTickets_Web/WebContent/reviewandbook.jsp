@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
 <title>Review your order</title>
 </head>
 <body>
@@ -12,9 +13,9 @@
 		<li>09/30/14 - Belo Horizonte - Lincoln - 844 - 6:00pm - Lincoln
 			- Belo Horizonte - 845 - 6:00am</li>
 	</ul>
-	<input type="button" value="Back to see the flights"
+	<input type="button" class="btn btn-danger" value="Back to see the flights"
 		onclick="window.location='flightsearch.jsp';">
-	<input type="submit" name="send" value="Confirm" align="right"
+	<input type="submit" class="btn btn-success" name="send" value="Confirm" align="right"
 		onclick="window.location='transactionconfirmationpage.jsp';">
 </body>
 </html>
