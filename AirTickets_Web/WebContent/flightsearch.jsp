@@ -12,7 +12,7 @@
 	<form name="input" action="reviewandbook.jsp" method="post">
 		<input type="radio" name="flight" value="BHZ-LNK-844"> 09/30/14 - Belo Horizonte - Lincoln - 844 - 6:00pm - Lincoln - Belo Horizonte - 845 - 6:00am <br> 
 		
-		<input type = "button" value="Back to Login Page" onclick="window.location='login.jsp';" > <input type="submit" name="send" value="Choose flight" align="right" >
+		<input type = "button" value="Back to Search page" onclick="window.location='flightsearchquery.jsp';" > <input type="submit" name="send" value="Choose flight" align="right" >
 	</form>
 </body>
 </html>

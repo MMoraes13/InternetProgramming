@@ -7,7 +7,7 @@
 <title>Confirmation page</title>
 </head>
 <body>
-	<h3>Order received! Your flight is reserved. See you soon!</h3>
+	<h3>Order received! Your flight has been reserved. See you soon!</h3>
 
 	<p>
 		Thank your for flying Minas Flight Air. Click <a
