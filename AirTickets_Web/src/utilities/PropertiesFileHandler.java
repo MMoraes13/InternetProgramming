@@ -8,7 +8,11 @@ import java.util.Enumeration;
 import java.util.Properties;
 
 import model.User;
-
+/**
+ * 
+ * @author Mateus
+ *
+ */
 public class PropertiesFileHandler {
 
 	public Properties p;
