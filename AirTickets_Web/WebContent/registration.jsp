@@ -5,20 +5,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <script type="text/javascript" src="js/checkPwd.js"></script>
-
+<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
 <title>Registration Page</title>
 </head>
 <body>
-
+<div class="container-fluid">
 	<h3>Register here</h3>
-	<form name="registration" action="Registration" method="post">
-		User: <input type="text" name="username"> Pass: <input
-			type="password" name="password" id="pass1"> Re-pass: <input
-			type="password" name="check_password" id="pass2"
-			onkeyup="checkPass(); return false;"> <span
-			id="confirmMessage" class="confirmMessage"></span> <input
-			type="submit" value="Submit">
+	<form class="form-horizontal" role="form" name="registration" action="Registration" method="post">
+		<div class="form-group">
+			<label class="col-sm-2 control-label" for="username">User</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-group" id="username" placeholder="Username" name="username">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label" for="password">Password</label>
+			<div class="col-sm-10">
+				<input type="password" class="form-group" id="password" placeholder="Password" name="password">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label" for="password2">Password</label>
+			<div class="col-sm-10">
+				<input type="password" class="form-group" id="password2" placeholder="Retype your password" name="password2" onkeyup="checkPass(); return false;">
+			</div>
+			<span id="confirmMessage" class="confirmMessage"></span> 
+		</div>
+		<input class="col-sm-offset-2 btn btn-success" type="submit" value="Submit">
 	</form>
-
+</div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 function checkPass()
 {
-    var pass1 = document.getElementById('pass1');
-    var pass2 = document.getElementById('pass2');
+    var pass1 = document.getElementById('password');
+    var pass2 = document.getElementById('password2');
     var message = document.getElementById('confirmMessage');
 
     var goodColor = "#66cc66";
