@@ -5,7 +5,12 @@ import java.util.Scanner;
 
 import model.User;
 import utilities.PropertiesFileHandler;
-
+/**
+ * 
+ * @author Mateus
+ * @author Lucas
+ * 
+ */
 public class Users {
 
 	private User user;
@@ -21,6 +26,11 @@ public class Users {
 
 	}
 
+	/**
+	 * This method receives an user object containing its username and its password. Then, the method transforms into a hashedPassword and save it, in case that is not a repeated user.
+	 * @param user information about the new user
+	 * @return bool_val If the user is created returns true. Otherwise, returns false.
+	 */
 	public boolean createUser(User user) {
 		p = new PropertiesFileHandler();
 		if (p.userExist(user) == false) {

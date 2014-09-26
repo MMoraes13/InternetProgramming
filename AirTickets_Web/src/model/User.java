@@ -1,4 +1,9 @@
 package model;
+/**
+ * Model class for user, containing name and password.
+ * @author Mateus
+ *
+ */
 
 public class User {
 	private String name;

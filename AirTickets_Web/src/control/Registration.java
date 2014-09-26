@@ -8,16 +8,31 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import model.User;
-
+/**
+ * In this class the server will receive the attempt to registrate a user and will process it. 
+ * 
+ */
+/**
+ * @author Lucas
+ *
+ */
 public class Registration extends HttpServlet {
 
 	private User user;
-
+	/**
+	 * This doGet is "just in cause". Will not be used in this application. Call doPost.
+	 * @param request HttpServletRequest
+	 * @param response HttpServletResponse
+	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		doPost(request, response);
 	}
-
+	/**
+	 * This doPost calls the servlet Users to registrate a new user. 
+	 * @param request HttpServletRequest with information of request like username and password.
+	 * @param response HttpServletResponse with information of where to go in case if the registration is successful or not
+	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 

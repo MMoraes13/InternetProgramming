@@ -8,12 +8,16 @@ import java.util.Enumeration;
 import java.util.Properties;
 
 import model.User;
-
+/**
+ * This class handle the properties file  
+ * @author Lucas
+ *
+ */
 public class PropertiesFileHandler {
 
 	public Properties p;
-	FileInputStream fis = null;
-	String propFilePath = "/Users/lucas/git/InternetProgramming/AirTickets_Web/src/Model/users.properties";
+	private FileInputStream fis = null;
+	private String propFilePath = "/Users/lucas/git/InternetProgramming/AirTickets_Web/src/Model/users.properties";
 	
 	public PropertiesFileHandler() {
 

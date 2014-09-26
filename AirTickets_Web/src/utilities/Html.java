@@ -1,12 +1,16 @@
 package utilities;
 
-
+/**
+ * This class contains useful data to build html pages on servlets. 
+ * @author Lucas
+ *
+ */
 public class Html {
-	String content	= "text/html";
-	String title 	= null;
-	String docType 	= "<!doctype html public \"-//w3c//dtd html 4.0 transitional//en\">\n";
-	String beg = null;
-	String end = "</body></html>";
+	private String content	= "text/html";
+	private String title 	= "";
+	private String docType 	= "<!doctype html public \"-//w3c//dtd html 4.0 transitional//en\">\n";
+	private String beggining = "";
+	private String end = "</body></html>";
 	
 	public String getContent() {
 		return content;
@@ -21,7 +25,7 @@ public class Html {
 	}
 
 	public String getBeg() {
-		return beg;
+		return beggining;
 	}
 
 	public String getEnd() {
@@ -30,6 +34,6 @@ public class Html {
 
 	public Html(String title) {
 		this.title = title;
-		this.beg = title + docType;
+		this.beggining = title + docType;
 	}
 }
