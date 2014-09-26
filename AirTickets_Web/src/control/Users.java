@@ -1,18 +1,19 @@
-package Model;
+package control;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import Utilities.PropertiesFileHandler;
+import utilities.PropertiesFileHandler;
+import model.User;
 
 public class Users {
 
 	private User user;
-	Scanner sc;
+	private Scanner sc;
 	private FileWriter fw;
-	PropertiesFileHandler p = null;
+	private PropertiesFileHandler p = null;
 
 	public Users() {
 
@@ -41,5 +42,22 @@ public class Users {
 			return false;
 		}
 	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public PropertiesFileHandler getP() {
+		return p;
+	}
+
+	public void setP(PropertiesFileHandler p) {
+		this.p = p;
+	}
+	
 
 }
