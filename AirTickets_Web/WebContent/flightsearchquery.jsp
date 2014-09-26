@@ -39,7 +39,7 @@
 		    	</select>
 		    </div>
     	</div>
-		<button type="button" class="btn btn-danger" value="Exit" >Exit</button>
+		<button type="button" class="btn btn-danger" value="Exit" onClick="window.location='login.jsp'">Exit</button>
 		<button type="submit" class="btn btn-success" value="Search">Search</button>
 	</form>     
 </div>

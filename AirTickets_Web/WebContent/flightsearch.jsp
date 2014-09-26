@@ -9,8 +9,9 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<h3>Choose your flight</h3>
-		Choose your destiny and when you want to go.
+		<h3 style="display:inline">Choose your flight</h3>
+		<img style="display:inline;" align="right" src="style/background-mg.png" alt="Minas" height="80" width="80">
+		<p style="disply:block">Choose your destiny and when you want to go.</p>
 		<form name="input" action="reviewandbook.jsp" method="post" role="form">
 			<div class="radio">
 				<label>
@@ -19,6 +20,7 @@
 				</label>
 			</div> 
 				<input type="button" class="btn btn-danger" value="Back to Search page" onclick="window.location='flightsearchquery.jsp';" > 
+				<input type="button" class="btn btn-warning" value="See booking history page" onclick="window.location='bookinghistory.jsp';" >
 				<input type="submit" class="btn btn-success" name="send" value="Choose flight" align="right" >
 			
 		</form>

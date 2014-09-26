@@ -11,7 +11,7 @@
 <body>
 <div class="container-fluid">
 	<h3>Register here</h3>
-	<form class="form-horizontal" role="form" name="registration" action="Registration" method="post">
+	<form class="form-horizontal" role="form" name="registration" action="Registration" method="post" style="display:block">
 		<div class="form-group">
 			<label class="col-sm-2 control-label" for="username">User</label>
 			<div class="col-sm-10">
@@ -31,7 +31,9 @@
 			</div>
 			<span id="confirmMessage" class="confirmMessage"></span> 
 		</div>
-		<input class="col-sm-offset-2 btn btn-success" type="submit" value="Submit">
+		<input type="button" class="col-sm-offset-1 btn btn-danger" value="Cancel" onclick="window.location='login.jsp';" >
+		<input class="btn btn-success" type="submit" value="Submit">
+		
 	</form>
 </div>
 </body>
