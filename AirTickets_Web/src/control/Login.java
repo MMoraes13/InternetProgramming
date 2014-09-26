@@ -10,10 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import model.User;
 
 public class Login extends HttpServlet {
-	private String LOGIN_SUCCESSFUL = "login_success";
-	private String LOGIN_UNSUCCESFUL = "login_unsucess";
-	User user;
-	Users us;
+	private User user;
+	private Users us;
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -30,7 +28,7 @@ public class Login extends HttpServlet {
 
 		if (us.getP().userExist(user) == true) {
 
-			response.sendRedirect("flightsearch.jsp");
+			response.sendRedirect("flightsearchquery.jsp");
 
 		} else {
 			response.sendRedirect("registration.jsp");

@@ -13,7 +13,7 @@
     <description></description>
     <display-name>Login</display-name>
     <servlet-name>Login</servlet-name>
-    <servlet-class>Model.Login</servlet-class>
+    <servlet-class>control.Login</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
@@ -23,7 +23,7 @@
     <description></description>
     <display-name>Registration</display-name>
     <servlet-name>Registration</servlet-name>
-    <servlet-class>Model.Registration</servlet-class>
+    <servlet-class>control.Registration</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Registration</servlet-name>

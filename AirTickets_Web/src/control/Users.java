@@ -1,12 +1,10 @@
 package control;
 
-import java.io.File;
 import java.io.FileWriter;
-import java.util.HashMap;
 import java.util.Scanner;
 
-import utilities.PropertiesFileHandler;
 import model.User;
+import utilities.PropertiesFileHandler;
 
 public class Users {
 
