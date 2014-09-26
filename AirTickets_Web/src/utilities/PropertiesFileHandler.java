@@ -8,11 +8,7 @@ import java.util.Enumeration;
 import java.util.Properties;
 
 import model.User;
-/**
- * This class handle the properties file  
- * @author Lucas
- *
- */
+
 public class PropertiesFileHandler {
 
 	public Properties p;
