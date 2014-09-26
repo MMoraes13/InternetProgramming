@@ -8,8 +8,10 @@ import java.util.Enumeration;
 import java.util.Properties;
 
 import model.User;
+
 /**
  * This class is responsible for handle the properties file of the archive.
+ * 
  * @author Lucas
  *
  */
@@ -18,9 +20,9 @@ public class PropertiesFileHandler {
 	public Properties p;
 	private FileInputStream fis = null;
 	private String propFilePath = "/Users/lucas/git/InternetProgramming/AirTickets_Web/src/Model/users.properties";
-	
+
 	/**
-	 * This constructor method
+	 * This constructor method initialize the file.
 	 */
 	public PropertiesFileHandler() {
 
@@ -56,6 +58,11 @@ public class PropertiesFileHandler {
 		}
 	}
 
+	/**
+	 * This method returns false if the user doesn`t exist and returns true if it exists.
+	 * @param user
+	 * @return bool_value
+	 */
 	public boolean userExist(User user) {
 
 		boolean exists = false;
@@ -65,19 +72,22 @@ public class PropertiesFileHandler {
 		if (pass == null)
 			exists = false;
 		else {
-			
+
 			String hashedPwd = "" + user.getPassword().hashCode();
 			user.setPassword(hashedPwd);
-			
-			if(pass.equals(user.getPassword()))
+
+			if (pass.equals(user.getPassword()))
 				exists = true;
-			
+
 		}
 
 		return exists;
 
 	}
-
+	/**
+	 * This method receives a user and if it doesn't exist, it creates  a new User. (see userExist method)
+	 * @param user
+	 */
 	public void addUser(User user) {
 
 		p.setProperty(user.getName(), user.getPassword());
@@ -97,7 +107,9 @@ public class PropertiesFileHandler {
 		}
 
 	}
-
+	/**
+	 * This method prints all the users that are registered at the system.
+	 */
 	public void printUsers() {
 
 		Enumeration<?> e = p.propertyNames();
