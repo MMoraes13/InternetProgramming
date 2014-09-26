@@ -9,8 +9,8 @@ import java.util.Properties;
 
 import model.User;
 /**
- * 
- * @author Mateus
+ * This class is responsible for handle the properties file of the archive.
+ * @author Lucas
  *
  */
 public class PropertiesFileHandler {
@@ -19,6 +19,9 @@ public class PropertiesFileHandler {
 	private FileInputStream fis = null;
 	private String propFilePath = "/Users/lucas/git/InternetProgramming/AirTickets_Web/src/Model/users.properties";
 	
+	/**
+	 * This constructor method
+	 */
 	public PropertiesFileHandler() {
 
 		p = new Properties();
