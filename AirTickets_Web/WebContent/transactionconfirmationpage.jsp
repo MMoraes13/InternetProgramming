@@ -12,7 +12,7 @@
 
 	<p>
 		Thank your for flying Minas Flight Air. Click <a
-			href="flightsearch.jsp"> here </a> to continue flying!
+			href="flightsearchresult.jsp"> here </a> to continue flying!
 	</p>
 	
 	<br><br>

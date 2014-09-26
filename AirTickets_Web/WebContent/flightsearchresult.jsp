@@ -20,7 +20,7 @@ thead {
 	<div class="container-fluid">
 		<h3 style="display:inline">Choose your flight</h3>
 		<img style="display:inline;" align="right" src="style/background-mg.png" alt="Minas" height="80" width="80">
-		<p style="disply:block">Choose your destiny and when you want to go.</p>
+		<br><br><p style="disply:block">Choose your destiny and when you want to go.</p>
 		<form name="input" action="reviewandbook.jsp" method="post" role="form">
 			<div class="radio">
 				<label>

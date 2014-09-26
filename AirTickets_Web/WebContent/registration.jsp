@@ -11,7 +11,7 @@
 <body>
 <div class="container-fluid">
 	<h3>Register here</h3>
-	<form class="form-horizontal" role="form" name="registration" action="Registration" method="post" style="display:block">
+	<form class="form-horizontal" role="form" name="registration" action="Registration" method="post" style="display:block" onsubmit="return validate()">
 		<div class="form-group">
 			<label class="col-sm-2 control-label" for="username">User</label>
 			<div class="col-sm-10">

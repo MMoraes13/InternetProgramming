@@ -16,4 +16,17 @@ function checkPass()
         message.style.color = badColor;
         message.innerHTML = "Passwords Do Not Match!"
     }
-} 
+}
+
+function validate()
+{
+	var pass1 = document.getElementById('password');
+	var pass2 = document.getElementById('password2');
+	
+  if(pass1.value != pass2.value || (pass1.value == "" && pass2.value == ""))
+  {
+    alert("Both passwords are not matching");
+    return false;
+  }
+  return true;
+}

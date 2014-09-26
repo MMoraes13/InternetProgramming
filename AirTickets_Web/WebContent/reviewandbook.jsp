@@ -16,7 +16,7 @@
 	<input type="button" class="btn btn-danger" value="Back to see the flights"
 		onclick="window.location='flightsearch.jsp';">
 	<input type="submit" class="btn btn-success" name="send" value="Confirm" align="right"
-		onclick="window.location='transactionconfirmationpage.jsp';">
+		onclick="window.location='transaction.jsp';">
 		
 	<br><br><button type="button" class="btn btn-default"  onClick="window.location='login.jsp'"><b>Logout</b></button>
 </body>
