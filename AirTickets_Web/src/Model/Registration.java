@@ -18,21 +18,21 @@ public class Registration extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		Users us = new Users();
-		
-		user = new User(request.getParameter("username"), 
-				 request.getParameter("password"));
-		
+
+		user = new User(request.getParameter("username"),
+				request.getParameter("password"));
+
 		if (us.createUser(user) == true) {
-			
+
 			response.sendRedirect("login.jsp");
-			
+
 		} else {
 
 			response.sendRedirect("login.jsp");
 		}
-		
+
 	}
 
 }

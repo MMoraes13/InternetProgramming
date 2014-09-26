@@ -9,9 +9,9 @@
 <body>
 	<h3>Log in here</h3>
 	<form name="input" action="Login" method="post">
-		User: <input type="text" name="username">
-		Pass: <input type="password" name="password"> 
-		<input type="submit" value="Submit">
+		User: <input type="text" name="username"> Pass: <input
+			type="password" name="password"> <input type="submit"
+			value="Submit">
 	</form>
 
 </body>

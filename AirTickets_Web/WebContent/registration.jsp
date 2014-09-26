@@ -12,11 +12,12 @@
 
 	<h3>Register here</h3>
 	<form name="registration" action="Registration" method="post">
-		User: <input type="text" name="username"> 
-		Pass: <input type="password" name="password" id="pass1"> 
-		Re-pass: <input type="password" name="check_password" id="pass2" onkeyup="checkPass(); return false;">
-		<span id="confirmMessage" class="confirmMessage"></span>
-		<input type="submit" value="Submit">
+		User: <input type="text" name="username"> Pass: <input
+			type="password" name="password" id="pass1"> Re-pass: <input
+			type="password" name="check_password" id="pass2"
+			onkeyup="checkPass(); return false;"> <span
+			id="confirmMessage" class="confirmMessage"></span> <input
+			type="submit" value="Submit">
 	</form>
 
 </body>

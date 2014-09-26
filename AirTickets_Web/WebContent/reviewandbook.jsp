@@ -7,14 +7,14 @@
 <title>Review your order</title>
 </head>
 <body>
-<h3>You have choosen this flight</h3>
+	<h3>You have choosen this flight</h3>
 	<ul>
 		<li>09/30/14 - Belo Horizonte - Lincoln - 844 - 6:00pm - Lincoln
 			- Belo Horizonte - 845 - 6:00am</li>
 	</ul>
 	<input type="button" value="Back to see the flights"
 		onclick="window.location='flightsearch.jsp';">
-	<input type="submit" name="send" value="Confirm" align="right" 
-	onclick="window.location='transactionconfirmationpage.jsp';">
+	<input type="submit" name="send" value="Confirm" align="right"
+		onclick="window.location='transactionconfirmationpage.jsp';">
 </body>
 </html>

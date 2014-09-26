@@ -17,9 +17,9 @@ public class Users {
 	public Users() {
 
 		user = new User();
-		
+
 		p = new PropertiesFileHandler();
-		
+
 	}
 
 	public boolean createUser(User user) {

@@ -7,7 +7,7 @@
 <title>Flight Search</title>
 </head>
 <body>
-<h3>Choose your flight</h3>
+	<h3>Choose your flight</h3>
 	<p> Choose your destiny and when you want to go. </p>
 	<form name="input" action="reviewandbook.jsp" method="post">
 		<input type="radio" name="flight" value="BHZ-LNK-844"> 09/30/14 - Belo Horizonte - Lincoln - 844 - 6:00pm - Lincoln - Belo Horizonte - 845 - 6:00am <br> 
