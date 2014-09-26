@@ -19,7 +19,7 @@ public class PropertiesFileHandler {
 
 	public Properties p;
 	private FileInputStream fis = null;
-	private String propFilePath = "/Users/lucas/git/InternetProgramming/AirTickets_Web/src/Model/users.properties";
+	private String propFilePath = "/Users/lucas/git/InternetProgrammingF/AirTickets_Web/src/Model/users.properties";
 
 	/**
 	 * This constructor method initialize the file.
@@ -78,6 +78,8 @@ public class PropertiesFileHandler {
 
 			if (pass.equals(user.getPassword()))
 				exists = true;
+			else
+				exists = false;
 
 		}
 
